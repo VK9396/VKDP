@@ -4,7 +4,7 @@ public class Printer {
 	
  
 
-	private static Printer INSTANCE ;// MultiThreading evr...
+	private static volatile Printer INSTANCE ;// MultiThreading evr...
 	
 	private Printer() {
 		System.out.println("private 0-arg Constructor");
